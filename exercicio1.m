@@ -1,7 +1,7 @@
-function t = exercicio1(func,x0)
+function t = exercicio1(func, func_d, x0)
 
 % nao alterar: inicio
-es = 1;
+es = 0.01;
 imax = 20;
 % nao alterar: fim
 
@@ -20,14 +20,8 @@ for ii = 1:imax %usar ii e n i pq i eh imaginarium
   endif
   t(ii+1) = t(ii) - func(t(ii))/func_d(t(ii)); %; faz sumir
 endfor
-  last_index = find(t, 1, 'last');
-  resultado = t(last_index)
 
-  erro = erro(ii)
-
-  resultado_interacoes = ii
-t = resultado; % alterar
-
+t(ii)
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 endfunction
