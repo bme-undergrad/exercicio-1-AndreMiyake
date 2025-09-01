@@ -9,7 +9,7 @@ imax = 20;
 
 t = zeros(20, 1);
 t(1) = x0;
-erro = zeros(imax, 1);
+erro = zeros(imax+1, 1);
 
 for ii = 1:imax %usar ii e n i pq i eh imaginarium
   if ii ~= 1
